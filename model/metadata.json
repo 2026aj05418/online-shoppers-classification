@@ -1,0 +1,216 @@
+{
+  "dataset_name": "Online Shoppers Purchasing Intention",
+  "source": "UCI Machine Learning Repository",
+  "uci_id": 468,
+  "rows": 12330,
+  "input_features": 17,
+  "categorical_feature_count": 7,
+  "numerical_feature_count": 10,
+  "target": "Revenue",
+  "target_type": "Binary classification",
+  "positive_class": "True (purchase)",
+  "negative_class": "False (no purchase)",
+  "class_counts": {
+    "No purchase (False)": 10422,
+    "Purchase (True)": 1908
+  },
+  "feature_info": [
+    {
+      "Feature": "Administrative",
+      "Role": "Input feature",
+      "Type": "Numerical",
+      "Data type": "Numeric",
+      "Unique values": 27,
+      "Missing values": 0
+    },
+    {
+      "Feature": "Administrative_Duration",
+      "Role": "Input feature",
+      "Type": "Numerical",
+      "Data type": "Numeric",
+      "Unique values": 3335,
+      "Missing values": 0
+    },
+    {
+      "Feature": "Informational",
+      "Role": "Input feature",
+      "Type": "Numerical",
+      "Data type": "Numeric",
+      "Unique values": 17,
+      "Missing values": 0
+    },
+    {
+      "Feature": "Informational_Duration",
+      "Role": "Input feature",
+      "Type": "Numerical",
+      "Data type": "Numeric",
+      "Unique values": 1258,
+      "Missing values": 0
+    },
+    {
+      "Feature": "ProductRelated",
+      "Role": "Input feature",
+      "Type": "Numerical",
+      "Data type": "Numeric",
+      "Unique values": 311,
+      "Missing values": 0
+    },
+    {
+      "Feature": "ProductRelated_Duration",
+      "Role": "Input feature",
+      "Type": "Numerical",
+      "Data type": "Numeric",
+      "Unique values": 9551,
+      "Missing values": 0
+    },
+    {
+      "Feature": "BounceRates",
+      "Role": "Input feature",
+      "Type": "Numerical",
+      "Data type": "Numeric",
+      "Unique values": 1872,
+      "Missing values": 0
+    },
+    {
+      "Feature": "ExitRates",
+      "Role": "Input feature",
+      "Type": "Numerical",
+      "Data type": "Numeric",
+      "Unique values": 4777,
+      "Missing values": 0
+    },
+    {
+      "Feature": "PageValues",
+      "Role": "Input feature",
+      "Type": "Numerical",
+      "Data type": "Numeric",
+      "Unique values": 2704,
+      "Missing values": 0
+    },
+    {
+      "Feature": "SpecialDay",
+      "Role": "Input feature",
+      "Type": "Numerical",
+      "Data type": "Numeric",
+      "Unique values": 6,
+      "Missing values": 0
+    },
+    {
+      "Feature": "Month",
+      "Role": "Input feature",
+      "Type": "Categorical",
+      "Data type": "Category/text",
+      "Unique values": 10,
+      "Missing values": 0
+    },
+    {
+      "Feature": "OperatingSystems",
+      "Role": "Input feature",
+      "Type": "Categorical",
+      "Data type": "Category/text",
+      "Unique values": 8,
+      "Missing values": 0
+    },
+    {
+      "Feature": "Browser",
+      "Role": "Input feature",
+      "Type": "Categorical",
+      "Data type": "Category/text",
+      "Unique values": 13,
+      "Missing values": 0
+    },
+    {
+      "Feature": "Region",
+      "Role": "Input feature",
+      "Type": "Categorical",
+      "Data type": "Category/text",
+      "Unique values": 9,
+      "Missing values": 0
+    },
+    {
+      "Feature": "TrafficType",
+      "Role": "Input feature",
+      "Type": "Categorical",
+      "Data type": "Category/text",
+      "Unique values": 20,
+      "Missing values": 0
+    },
+    {
+      "Feature": "VisitorType",
+      "Role": "Input feature",
+      "Type": "Categorical",
+      "Data type": "Category/text",
+      "Unique values": 3,
+      "Missing values": 0
+    },
+    {
+      "Feature": "Weekend",
+      "Role": "Input feature",
+      "Type": "Categorical",
+      "Data type": "Category/text",
+      "Unique values": 2,
+      "Missing values": 0
+    }
+  ],
+  "feature_columns": [
+    "Administrative",
+    "Administrative_Duration",
+    "Informational",
+    "Informational_Duration",
+    "ProductRelated",
+    "ProductRelated_Duration",
+    "BounceRates",
+    "ExitRates",
+    "PageValues",
+    "SpecialDay",
+    "Month",
+    "OperatingSystems",
+    "Browser",
+    "Region",
+    "TrafficType",
+    "VisitorType",
+    "Weekend"
+  ],
+  "training_rows": 9864,
+  "test_rows": 2466,
+  "test_size": 0.2,
+  "random_state": 42,
+  "model_settings": {
+    "Logistic Regression": {
+      "C": 1.0,
+      "max_iter": 2000,
+      "class_weight": "balanced",
+      "solver": "lbfgs"
+    },
+    "Decision Tree": {
+      "criterion": "gini",
+      "max_depth": 12,
+      "min_samples_split": 20,
+      "min_samples_leaf": 5,
+      "class_weight": "balanced"
+    },
+    "K-Nearest Neighbors": {
+      "n_neighbors": 7,
+      "weights": "distance",
+      "metric": "minkowski"
+    },
+    "Gaussian Naive Bayes": {
+      "var_smoothing": 1e-09
+    },
+    "Support Vector Machine": {
+      "C": 2.0,
+      "kernel": "rbf",
+      "gamma": "scale",
+      "probability": true,
+      "class_weight": "balanced"
+    }
+  },
+  "decision_tree": {
+    "implementation": "scikit-learn DecisionTreeClassifier (CART-style classification tree)",
+    "criterion": "gini",
+    "max_depth": 12,
+    "min_samples_split": 20,
+    "min_samples_leaf": 5,
+    "class_weight": "balanced"
+  }
+}
