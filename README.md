@@ -22,7 +22,7 @@ The dataset contains **12,330 online shopping sessions** and **17 input features
 
 ## 3. GitHub Repository Link
 
-**GitHub Repository:**  
+**GitHub Repository:**  https://github.com/2026aj05418/online-shoppers-classification.git
 
 <!-- Add the GitHub repository URL here when available. -->
 
@@ -80,7 +80,7 @@ The interactive Streamlit application provides the following functionality:
 
 The uploaded test CSV must contain all required input features and the `Revenue` target column. The application uses the saved trained models to generate predictions and calculate evaluation metrics. It does not train or fit a model using the uploaded test data.
 
-**Live Streamlit App:**  
+**Live Streamlit App:**  https://2026aj05418-bits-ml-assignment2.streamlit.app
 
 <!-- Add the deployed Streamlit Community Cloud URL here when available. -->
 
